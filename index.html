@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hari Narayan Sah | AI Engineer</title>
+    <title>Hari Narayan Sah | Data Scientist & AI/ML Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -242,7 +242,7 @@
                 <div class="lg:w-3/5">
                     <h3 class="text-2xl font-bold text-gray-800 mb-6">Professional Summary</h3>
                     <p class="text-gray-600 mb-8 leading-relaxed">
-                        Motivated Data Science and AI professional with strong foundations in Machine Learning, Deep
+                        Motivated Data Scientist and AI professional with strong foundations in Machine Learning, Deep
                         Learning, and
                         Generative AI. Skilled in Python and modern AI frameworks with hands-on experience in predictive
                         modeling,
@@ -302,7 +302,7 @@
                             </h4>
                             <div class="bg-white p-4 rounded-lg shadow-sm">
                                 <h5 class="font-semibold text-gray-800">Data Science Intern -  <b>Present</b></h5>
-                                <p class="text-sm text-gray-600 mb-2"> Mindrisers Institute of Technology, Kathmandu </p>
+                                <p class="text-sm text-gray-600 mb-2"> Mindrisers Technologies, Kathmandu </p>
                                 <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
                                     <li>Developed generative AI solutions using LLaMA and LangChain to enhance chatbot performance.</li>
                                     <li>Built and optimized ML models for customer churn prediction and sentiment analysis.</li>
@@ -700,30 +700,30 @@
                 </div>
 
                 <div class="lg:w-3/5">
-                    <form class="bg-white p-8 rounded-xl shadow-lg">
+                    <form  action="https://formspree.io/f/xwpqgopl" method="POST" class="bg-white p-8 rounded-xl shadow-lg">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
-                                <input type="text" id="name"
+                                <input type="text" id="name" name = 'name'
                                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
                             </div>
 
                             <div>
                                 <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
-                                <input type="email" id="email"
+                                <input type="email" id="email" name = 'email'
                                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
                             </div>
                         </div>
 
                         <div class="mb-6">
                             <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
-                            <input type="text" id="subject"
+                            <input type="text" id="subject" name = 'subject'
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
                         </div>
 
                         <div class="mb-6">
                             <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-                            <textarea id="message" rows="5"
+                            <textarea id="message" rows="5" name = "message"
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"></textarea>
                         </div>
 
@@ -761,7 +761,7 @@
                 <p class="text-gray-400 mb-4 md:mb-0">&copy; 2024 Hari Narayan Sah. All rights reserved.</p>
 
                 <div class="flex space-x-4">
-                    <a href="www.linkedin.com/in/45harry"
+                    <a href="https://www.linkedin.com/in/45harry"
                         class="bg-gray-800 p-3 rounded-full text-gray-400 hover:bg-blue-600 hover:text-white transition">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
@@ -823,6 +823,12 @@
             observer.observe(section);
         });
     </script>
+    <script>
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+</script>
+
 </body>
 
 </html>
