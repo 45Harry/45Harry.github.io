@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Harry — AI Engineer. Voice AI, real-time speech pipelines, and small language models.">
+    <meta name="description" content="Hari Narayan Sah (Harry) — AI Engineer. Production voice agents, clinical speech pipelines, Nepali TTS, and computer vision.">
     <title>Harry — AI Engineer</title>
     <style>
         /* ===== RESET ===== */
@@ -808,6 +808,24 @@
             font-style: italic;
         }
 
+        .gui-project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 14px;
+            margin-top: auto;
+            padding-top: 4px;
+            font-size: 12px;
+            font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        }
+
+        #gui-view .gui-project-links a {
+            color: var(--accent-2);
+        }
+
+        #gui-view .gui-project-links a:hover {
+            color: var(--accent-1);
+        }
+
         /* vita (experience + education) */
         .gui-vita {
             display: grid;
@@ -1140,18 +1158,18 @@
 
                     <div class="line">class <b>Harry</b>(<b>AIEngineer</b>):</div>
                     <div class="line i1">"""</div>
-                    <div class="line i1 comment">Full-stack + ML engineer building voice AI, real-time speech</div>
-                    <div class="line i1 comment">pipelines, and small language models.</div>
+                    <div class="line i1 comment">AI engineer focused on production voice systems and computer vision.</div>
                     <div class="line i1">"""</div>
 
                     <div class="line i1">def <b>__init__</b>(self):</div>
 
+                    <div class="line i2">self.name = "Hari Narayan Sah"</div>
                     <div class="line i2">self.bio = """</div>
-                    <div class="line i3 comment">Motivated Data Scientist and AI professional with strong foundations</div>
-                    <div class="line i3 comment">in Machine Learning, Deep Learning, and Generative AI. Skilled in</div>
-                    <div class="line i3 comment">Python and modern AI frameworks with hands-on experience in</div>
-                    <div class="line i3 comment">predictive modeling, chatbots, and sentiment analysis. Currently</div>
-                    <div class="line i3 comment">working as a Jr. AI Engineer at Mantra Ideas Pvt. Ltd.</div>
+                    <div class="line i3 comment">AI engineer focused on production voice systems and computer</div>
+                    <div class="line i3 comment">vision. At Mantra Ideas, shipped Colait's physician interview</div>
+                    <div class="line i3 comment">agent (Amazon Nova Sonic + Claude Haiku on Bedrock) and a clinical</div>
+                    <div class="line i3 comment">scribe pipeline. Also built Telvox, a LiveKit voice-agent platform,</div>
+                    <div class="line i3 comment">Nepali TTS fine-tunes, and a banknote OCR pipeline.</div>
                     <div class="line i2">"""</div>
 
                     <div class="line"></div>
@@ -1167,26 +1185,26 @@
                     <div class="line i3">"Maithili": "native",</div>
                     <div class="line i3">"Nepali": "fluent",</div>
                     <div class="line i3">"Hindi": "fluent",</div>
-                    <div class="line i3">"English": "intermediate",</div>
+                    <div class="line i3">"English": "professional working proficiency",</div>
                     <div class="line i2">}</div>
 
                     <div class="line"></div>
 
                     <div class="line i2">self.education = [</div>
                     <div class="line i3">{</div>
-                    <div class="line i4">"degree": "Data Science with Python Certification",</div>
-                    <div class="line i4">"school": "Mindrisers Institute of Technology",</div>
-                    <div class="line i4">"year": "2024-2025",</div>
+                    <div class="line i4">"degree": "Data Science with Python",</div>
+                    <div class="line i4">"school": "Mindrisers Institute of Technology, Kathmandu",</div>
+                    <div class="line i4">"year": "Sep 2024 - Jan 2025",</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
                     <div class="line i4">"degree": "Diploma in Computer Engineering",</div>
-                    <div class="line i4">"school": "Adarsha Secondary School",</div>
-                    <div class="line i4">"year": "2020-2024",</div>
+                    <div class="line i4">"school": "Adarsha Secondary School, Biratnagar",</div>
+                    <div class="line i4">"year": "2020 - 2024",</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
                     <div class="line i4">"degree": "Diploma in Graphic Designing",</div>
-                    <div class="line i4">"school": "New BIIT Institute",</div>
-                    <div class="line i4">"year": "2023",</div>
+                    <div class="line i4">"school": "New BIIT Institute, Biratnagar",</div>
+                    <div class="line i4">"year": "Jan 2023 - Apr 2023",</div>
                     <div class="line i3">},</div>
                     <div class="line i2">]</div>
 
@@ -1194,28 +1212,25 @@
 
                     <div class="line i2">self.experience = [</div>
                     <div class="line i3">{</div>
-                    <div class="line i4">"role": "Jr. AI Engineer",</div>
+                    <div class="line i4">"role": "AI Engineer",</div>
                     <div class="line i4">"company": "Mantra Ideas, Lalitpur",</div>
+                    <div class="line i4">"year": "Sep 2025 - Present",</div>
                     <div class="line i4">"notes": [</div>
-                    <div class="line i4">"AI automation workflows",</div>
+                    <div class="line i4">"Colait: built the production voice interview runtime (FastAPI WebSocket, Nova Sonic speech, Claude Haiku 4.5 on Bedrock via Strands for probing, transitions, and structured answers)",</div>
+                    <div class="line i4">"Kept sessions usable on bad networks: quiet-moment reconnects, unspoken-speech replay, heartbeat resume, realtime transcript writes to S3",</div>
+                    <div class="line i4">"Shipped chat-only interviews and mid-session voice-to-chat on the same question state",</div>
+                    <div class="line i4">"Shipped Scribe: streaming Amazon Transcribe, speaker diarization, Haiku visit briefs, romanized transcripts",</div>
+                    <div class="line i4">"Built the anonymized interview corpus behind analytics and PDF reports, with PII scrub",</div>
+                    <div class="line i4">"Built production voice agents for a UK client (hotel orders, garage bookings) with Vapi, n8n, and Twilio",</div>
                     <div class="line i4">],</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
                     <div class="line i4">"role": "Data Science Intern",</div>
                     <div class="line i4">"company": "Mindrisers Technologies, Kathmandu",</div>
+                    <div class="line i4">"year": "Jun 2025 - Sep 2025",</div>
                     <div class="line i4">"notes": [</div>
-                    <div class="line i4">"Generative AI solutions using LLaMA + LangChain",</div>
-                    <div class="line i4">"Customer churn prediction and sentiment analysis models",</div>
-                    <div class="line i4">"Deployed AI applications with the engineering team",</div>
-                    <div class="line i4">],</div>
-                    <div class="line i3">},</div>
-                    <div class="line i3">{</div>
-                    <div class="line i4">"role": "Volunteer — Birat Expo 2079",</div>
-                    <div class="line i4">"company": "Biratnagar, Nepal",</div>
-                    <div class="line i4">"year": "Dec 2022",</div>
-                    <div class="line i4">"notes": [</div>
-                    <div class="line i4">"System maintenance during the event",</div>
-                    <div class="line i4">"Event management support",</div>
+                    <div class="line i4">"Generative assistants with LLaMA + LangChain: medical chatbot on the Gale Encyclopedia, news research app (Groq Llama 3 + FAISS)",</div>
+                    <div class="line i4">"Classical and neural models for churn prediction and financial sentiment, deployed with the engineering team",</div>
                     <div class="line i4">],</div>
                     <div class="line i3">},</div>
                     <div class="line i2">]</div>
@@ -1224,67 +1239,66 @@
 
                     <div class="line i2">self.projects = [</div>
                     <div class="line i3">{</div>
-                    <div class="line i4">"name": "Colait AI",</div>
-                    <div class="line i4">"type": "real-time voice-based AI interview platform",</div>
-                    <div class="line i4">"stack": "speech-to-speech via Amazon Nova Sonic + Strands agent framework on AWS Bedrock",</div>
-                    <div class="line i4">"highlights": "multi-mode prompt/tool architecture; custom Nepali TTS",</div>
+                    <div class="line i4">"name": "Colait",</div>
+                    <div class="line i4">"type": "clinical voice interview and scribe platform",</div>
+                    <div class="line i4">"stack": "Nova Sonic, Claude Haiku (Bedrock / Strands), DynamoDB, S3, ECR, Bedrock AgentCore",</div>
+                    <div class="line i4">"highlights": "physician interviews over bidirectional audio or chat; Scribe turns a visit into a diarized, romanized brief; ARM64 image on AgentCore",</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
-                    <div class="line i4">"name": "HelloSarkar (हेलोसरकार)",</div>
-                    <div class="line i4">"type": "Nepali-language voice AI system for government grievance registration",</div>
+                    <div class="line i4">"name": "TelvoxAI",</div>
+                    <div class="line i4">"type": "LiveKit voice-agent platform",</div>
+                    <div class="line i4">"stack": "LiveKit, Azure, ElevenLabs, Google, OpenAI, Groq STT, Silero VAD, RNNoise",</div>
+                    <div class="line i4">"highlights": "multi-tool phone agent (leads, calendar, transfer, custom HTTP tools); Groq STT cut turn latency from ~8-9s to ~1-2s",</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
-                    <div class="line i4">"name": "Neplia",</div>
-                    <div class="line i4">"type": "Nepali small language model (SLM)",</div>
-                    <div class="line i4">"stack": "built on Qwen3-0.6B",</div>
+                    <div class="line i4">"name": "Nepali TTS",</div>
+                    <div class="line i4">"type": "Nepali speech synthesis fine-tunes",</div>
+                    <div class="line i4">"stack": "Chatterbox multilingual fine-tune (Devanagari), Matcha-TTS",</div>
+                    <div class="line i4">"repos": ["<a href="https://github.com/45Harry/chatterbox-nepali">chatterbox-nepali</a>", "<a href="https://github.com/45Harry/matcha-tts-nepali-test">matcha-tts-nepali-test</a>"],</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
-                    <div class="line i4">"name": "Real-time voice agent pipeline",</div>
-                    <div class="line i4">"type": "custom STT / LLM / TTS pipeline",</div>
-                    <div class="line i4">"stack": "LiveKit, Azure / Google Chirp3-HD / ElevenLabs / Groq",</div>
-                    <div class="line i4">"languages": "English, German, Nepali",</div>
+                    <div class="line i4">"name": "BanknoteOCR",</div>
+                    <div class="line i4">"type": "Nepali denomination and signature pipeline",</div>
+                    <div class="line i4">"stack": "Roboflow detector, PyTorch siamese signature model, FastAPI, OpenCV, ONNX Runtime, CLIP, Chroma",</div>
+                    <div class="line i4">"highlights": "~90% production accuracy",</div>
+                    <div class="line i4">"repos": ["<a href="https://github.com/45Harry/banknote-classifier">banknote-classifier</a>", "<a href="https://github.com/45Harry/banknote-finetunning">banknote-finetunning</a>", "<a href="https://github.com/45Harry/clip-model-finetunning-banknotes">clip-model-finetunning-banknotes</a>"],</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
-                    <div class="line i4">"name": "Nepali banknote CV",</div>
-                    <div class="line i4">"type": "denomination classification / retrieval",</div>
-                    <div class="line i4">"stack": "CLIP-based embeddings, few-shot learning",</div>
+                    <div class="line i4">"name": "AnswerServiceAI",</div>
+                    <div class="line i4">"type": "UK voice workflows",</div>
+                    <div class="line i4">"stack": "Vapi, n8n, Twilio",</div>
+                    <div class="line i4">"highlights": "hotel order handling and garage booking agents with live workflow automation and handoff",</div>
                     <div class="line i3">},</div>
                     <div class="line i2">]</div>
 
                     <div class="line"></div>
 
                     <div class="line i2">self.skills = {</div>
-                    <div class="line i3">"programming": [</div>
-                    <div class="line i4">"Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "C++", "C",</div>
+                    <div class="line i3">"voice_agents": [</div>
+                    <div class="line i4">"Amazon Nova Sonic 2", "AWS Strands", "Claude Haiku 4.5", "FastAPI WebSockets",</div>
+                    <div class="line i4">"Amazon Transcribe", "LiveKit", "Silero VAD", "RNNoise", "WebRTC noise suppression",</div>
+                    <div class="line i4">"Azure Speech", "ElevenLabs", "Groq STT", "OpenAI", "Deepgram",</div>
                     <div class="line i3">],</div>
-                    <div class="line i3">"machine_learning": [</div>
-                    <div class="line i4">"Scikit-Learn", "Regression", "Classification", "Decision Trees", "Random Forests", "SVM", "KNN",</div>
+                    <div class="line i3">"nepali_speech": [</div>
+                    <div class="line i4">"Chatterbox multilingual fine-tune", "Matcha-TTS", "Devanagari romanization",</div>
                     <div class="line i3">],</div>
-                    <div class="line i3">"deep_learning": [</div>
-                    <div class="line i4">"PyTorch", "TensorFlow", "Keras", "ANN", "CNN", "RNN", "LSTM", "Transformers",</div>
+                    <div class="line i3">"llm_agents": [</div>
+                    <div class="line i4">"Bedrock", "LangChain", "LLaMA", "Groq", "FAISS", "tool calling", "RAG",</div>
                     <div class="line i3">],</div>
-                    <div class="line i3">"generative_ai": [</div>
-                    <div class="line i4">"LLMs", "LangChain", "LangGraph", "HuggingFace", "LLaMA", "OpenAI", "Groq", "RAG",</div>
-                    <div class="line i4">"Vector Databases (Pinecone, Chroma)",</div>
+                    <div class="line i3">"cloud_deploy": [</div>
+                    <div class="line i4">"AWS S3", "DynamoDB", "ECR", "Bedrock AgentCore", "Docker", "Azure",</div>
                     <div class="line i3">],</div>
-                    <div class="line i3">"voice_pipelines": [</div>
-                    <div class="line i4">"LiveKit", "STT / TTS", "Amazon Nova Sonic", "ElevenLabs", "Google Chirp3-HD", "Azure",</div>
+                    <div class="line i3">"vision": [</div>
+                    <div class="line i4">"PyTorch", "OpenCV", "ONNX Runtime", "Roboflow", "CLIP", "Chroma", "FastAPI",</div>
                     <div class="line i3">],</div>
-                    <div class="line i3">"agent_frameworks": [</div>
-                    <div class="line i4">"AWS Bedrock", "Strands", "Google ADK",</div>
+                    <div class="line i3">"app_surface": [</div>
+                    <div class="line i4">"React", "TypeScript", "Vite",</div>
                     <div class="line i3">],</div>
-                    <div class="line i3">"applied_cv": [</div>
-                    <div class="line i4">"CLIP-based embeddings", "few-shot learning",</div>
+                    <div class="line i3">"workflow": [</div>
+                    <div class="line i4">"Vapi", "n8n", "Twilio",</div>
                     <div class="line i3">],</div>
-                    <div class="line i3">"data_visualization": [</div>
-                    <div class="line i4">"Power BI", "Matplotlib", "Seaborn",</div>
-                    <div class="line i3">],</div>
-                    <div class="line i3">"databases": [</div>
-                    <div class="line i4">"SQL", "MongoDB", "Pinecone", "ChromaDB",</div>
-                    <div class="line i3">],</div>
-                    <div class="line i3">"tools": [</div>
-                    <div class="line i4">"Git / GitHub", "Docker", "Linux", "FastAPI", "Node.js / Express / Socket.io",</div>
-                    <div class="line i4">"Jupyter Notebook", "Google Colab", "VS Code", "Cursor",</div>
+                    <div class="line i3">"languages": [</div>
+                    <div class="line i4">"Python", "C", "C++", "Go",</div>
                     <div class="line i3">],</div>
                     <div class="line i2">}</div>
 
@@ -1340,10 +1354,10 @@
                         <div class="gui-hero-text">
                             <div class="gui-eyebrow">AI Engineer</div>
                             <h1 class="gui-name">Harry</h1>
-                            <p class="gui-role">Voice AI &middot; Vision &middot; LLM Systems</p>
+                            <p class="gui-role">Voice Agents &middot; Speech &middot; Computer Vision</p>
                             <p class="gui-bio">
-                                Full-stack + ML engineer building voice AI, real-time speech pipelines,
-                                and small language models.
+                                AI engineer at Mantra Ideas shipping production voice systems, clinical
+                                speech pipelines, and computer vision.
                             </p>
                             <div class="gui-hero-links">
                                 <a href="https://github.com/45Harry">[ github ]</a>
@@ -1362,13 +1376,13 @@
                                     <span class="gui-card-fname">harry &mdash; portfolio.py</span>
                                 </div>
                                 <div class="gui-card-body"><span class="k">class</span> <span class="p">Harry</span>(<span class="p">AIEngineer</span>):
-    <span class="s">"""Voice &middot; Vision &middot; LLMs"""</span>
+    <span class="s">"""Voice &middot; Speech &middot; Vision"""</span>
 
     <span class="k">def</span> <span class="p">__init__</span>(self):
         self.stack = [
-            <span class="s">"Voice AI"</span>,
-            <span class="s">"Vision"</span>,
-            <span class="s">"LLMs"</span>,
+            <span class="s">"Nova Sonic"</span>,
+            <span class="s">"LiveKit"</span>,
+            <span class="s">"PyTorch"</span>,
         ]
         self.live = <span class="k">True</span>
 
@@ -1383,20 +1397,21 @@
             <div class="gui-marquee">
                 <div class="gui-marquee-track" id="gui-marquee-track">
                     <span>PYTHON</span><span class="dot-sep">&middot;</span>
-                    <span>AWS BEDROCK</span><span class="dot-sep">&middot;</span>
                     <span>AMAZON NOVA SONIC</span><span class="dot-sep">&middot;</span>
+                    <span>CLAUDE HAIKU</span><span class="dot-sep">&middot;</span>
+                    <span>AWS BEDROCK</span><span class="dot-sep">&middot;</span>
                     <span>STRANDS</span><span class="dot-sep">&middot;</span>
-                    <span>GOOGLE ADK</span><span class="dot-sep">&middot;</span>
+                    <span>AMAZON TRANSCRIBE</span><span class="dot-sep">&middot;</span>
                     <span>LIVEKIT</span><span class="dot-sep">&middot;</span>
+                    <span>SILERO VAD</span><span class="dot-sep">&middot;</span>
                     <span>ELEVENLABS</span><span class="dot-sep">&middot;</span>
-                    <span>AZURE</span><span class="dot-sep">&middot;</span>
-                    <span>CHIRP3-HD</span><span class="dot-sep">&middot;</span>
+                    <span>GROQ</span><span class="dot-sep">&middot;</span>
+                    <span>MATCHA-TTS</span><span class="dot-sep">&middot;</span>
                     <span>PYTORCH</span><span class="dot-sep">&middot;</span>
-                    <span>LANGCHAIN</span><span class="dot-sep">&middot;</span>
-                    <span>CLIP</span><span class="dot-sep">&middot;</span>
-                    <span>QWEN3</span><span class="dot-sep">&middot;</span>
-                    <span>SOCKET.IO</span><span class="dot-sep">&middot;</span>
+                    <span>OPENCV</span><span class="dot-sep">&middot;</span>
+                    <span>ONNX RUNTIME</span><span class="dot-sep">&middot;</span>
                     <span>FASTAPI</span><span class="dot-sep">&middot;</span>
+                    <span>DOCKER</span><span class="dot-sep">&middot;</span>
                 </div>
             </div>
 
@@ -1408,11 +1423,10 @@
                     <div class="gui-split">
                         <div class="gui-card">
                             <p>
-                                Motivated Data Scientist and AI professional with strong foundations in Machine Learning,
-                                Deep Learning, and Generative AI. Skilled in Python and modern AI frameworks with
-                                hands-on experience in predictive modeling, chatbots, and sentiment analysis. Currently
-                                working as a Jr. AI Engineer at Mantra Ideas Pvt. Ltd. building voice AI, real-time
-                                speech pipelines, and small language models.
+                                AI engineer focused on production voice systems and computer vision. At Mantra Ideas,
+                                I shipped Colait's physician interview agent (Amazon Nova Sonic and Claude Haiku on
+                                Bedrock) and a clinical scribe pipeline. I also built Telvox, a LiveKit voice-agent
+                                platform, Nepali TTS fine-tunes, and a banknote OCR pipeline.
                             </p>
                         </div>
                         <div class="gui-card">
@@ -1420,7 +1434,7 @@
                                 <li><strong>Maithili</strong> <span>native</span></li>
                                 <li><strong>Nepali</strong> <span>fluent</span></li>
                                 <li><strong>Hindi</strong> <span>fluent</span></li>
-                                <li><strong>English</strong> <span>intermediate</span></li>
+                                <li><strong>English</strong> <span>professional</span></li>
                             </ul>
                         </div>
                     </div>
@@ -1431,86 +1445,69 @@
                     <div class="gui-section-label">Skills</div>
                     <div class="gui-skills-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;">
                         <div class="gui-skill-category">
-                            <h3>Programming</h3>
+                            <h3>Voice Agents</h3>
                             <div class="gui-skill-pills">
-                                <span class="gui-pill">Python</span><span class="gui-pill">NumPy</span>
-                                <span class="gui-pill">Pandas</span><span class="gui-pill">Matplotlib</span>
-                                <span class="gui-pill">Seaborn</span><span class="gui-pill">C++</span>
-                                <span class="gui-pill">C</span>
+                                <span class="gui-pill">Nova Sonic 2</span><span class="gui-pill">AWS Strands</span>
+                                <span class="gui-pill">Claude Haiku 4.5</span><span class="gui-pill">FastAPI WebSockets</span>
+                                <span class="gui-pill">Amazon Transcribe</span><span class="gui-pill">LiveKit</span>
+                                <span class="gui-pill">Silero VAD</span><span class="gui-pill">RNNoise</span>
+                                <span class="gui-pill">WebRTC NS</span><span class="gui-pill">Azure Speech</span>
+                                <span class="gui-pill">ElevenLabs</span><span class="gui-pill">Groq STT</span>
+                                <span class="gui-pill">OpenAI</span><span class="gui-pill">Deepgram</span>
                             </div>
                         </div>
                         <div class="gui-skill-category">
-                            <h3>Machine Learning</h3>
+                            <h3>Nepali Speech</h3>
                             <div class="gui-skill-pills">
-                                <span class="gui-pill">Scikit-Learn</span><span class="gui-pill">Regression</span>
-                                <span class="gui-pill">Classification</span><span class="gui-pill">Trees</span>
-                                <span class="gui-pill">Random Forests</span><span class="gui-pill">SVM</span>
-                                <span class="gui-pill">KNN</span>
+                                <span class="gui-pill">Chatterbox fine-tune</span><span class="gui-pill">Matcha-TTS</span>
+                                <span class="gui-pill">Devanagari romanization</span>
                             </div>
                         </div>
                         <div class="gui-skill-category">
-                            <h3>Deep Learning</h3>
+                            <h3>LLM / Agents</h3>
                             <div class="gui-skill-pills">
-                                <span class="gui-pill">PyTorch</span><span class="gui-pill">TensorFlow</span>
-                                <span class="gui-pill">Keras</span><span class="gui-pill">ANN</span>
-                                <span class="gui-pill">CNN</span><span class="gui-pill">RNN</span>
-                                <span class="gui-pill">LSTM</span><span class="gui-pill">Transformers</span>
+                                <span class="gui-pill">Bedrock</span><span class="gui-pill">LangChain</span>
+                                <span class="gui-pill">LLaMA</span><span class="gui-pill">Groq</span>
+                                <span class="gui-pill">FAISS</span><span class="gui-pill">Tool calling</span>
+                                <span class="gui-pill">RAG</span>
                             </div>
                         </div>
                         <div class="gui-skill-category">
-                            <h3>Generative AI</h3>
+                            <h3>Cloud / Deploy</h3>
                             <div class="gui-skill-pills">
-                                <span class="gui-pill">LLMs</span><span class="gui-pill">LangChain</span>
-                                <span class="gui-pill">LangGraph</span><span class="gui-pill">HuggingFace</span>
-                                <span class="gui-pill">LLaMA</span><span class="gui-pill">OpenAI</span>
-                                <span class="gui-pill">Groq</span><span class="gui-pill">RAG</span>
-                                <span class="gui-pill">Vector DBs</span>
+                                <span class="gui-pill">AWS S3</span><span class="gui-pill">DynamoDB</span>
+                                <span class="gui-pill">ECR</span><span class="gui-pill">Bedrock AgentCore</span>
+                                <span class="gui-pill">Docker</span><span class="gui-pill">Azure</span>
                             </div>
                         </div>
                         <div class="gui-skill-category">
-                            <h3>Voice Pipelines</h3>
+                            <h3>Vision</h3>
                             <div class="gui-skill-pills">
-                                <span class="gui-pill">LiveKit</span><span class="gui-pill">STT / TTS</span>
-                                <span class="gui-pill">Nova Sonic</span><span class="gui-pill">ElevenLabs</span>
-                                <span class="gui-pill">Chirp3-HD</span><span class="gui-pill">Azure</span>
+                                <span class="gui-pill">PyTorch</span><span class="gui-pill">OpenCV</span>
+                                <span class="gui-pill">ONNX Runtime</span><span class="gui-pill">Roboflow</span>
+                                <span class="gui-pill">CLIP</span><span class="gui-pill">Chroma</span>
+                                <span class="gui-pill">FastAPI</span>
                             </div>
                         </div>
                         <div class="gui-skill-category">
-                            <h3>Agent Frameworks</h3>
+                            <h3>App Surface</h3>
                             <div class="gui-skill-pills">
-                                <span class="gui-pill">AWS Bedrock</span><span class="gui-pill">Strands</span>
-                                <span class="gui-pill">Google ADK</span>
+                                <span class="gui-pill">React</span><span class="gui-pill">TypeScript</span>
+                                <span class="gui-pill">Vite</span>
                             </div>
                         </div>
                         <div class="gui-skill-category">
-                            <h3>Applied CV</h3>
+                            <h3>Workflow</h3>
                             <div class="gui-skill-pills">
-                                <span class="gui-pill">CLIP Embeddings</span><span class="gui-pill">Few-Shot Learning</span>
+                                <span class="gui-pill">Vapi</span><span class="gui-pill">n8n</span>
+                                <span class="gui-pill">Twilio</span>
                             </div>
                         </div>
                         <div class="gui-skill-category">
-                            <h3>Data Viz</h3>
+                            <h3>Languages</h3>
                             <div class="gui-skill-pills">
-                                <span class="gui-pill">Power BI</span><span class="gui-pill">Matplotlib</span>
-                                <span class="gui-pill">Seaborn</span>
-                            </div>
-                        </div>
-                        <div class="gui-skill-category">
-                            <h3>Databases</h3>
-                            <div class="gui-skill-pills">
-                                <span class="gui-pill">SQL</span><span class="gui-pill">MongoDB</span>
-                                <span class="gui-pill">Pinecone</span><span class="gui-pill">ChromaDB</span>
-                            </div>
-                        </div>
-                        <div class="gui-skill-category">
-                            <h3>Tools</h3>
-                            <div class="gui-skill-pills">
-                                <span class="gui-pill">Git/GitHub</span><span class="gui-pill">Docker</span>
-                                <span class="gui-pill">Linux</span><span class="gui-pill">FastAPI</span>
-                                <span class="gui-pill">Node.js</span><span class="gui-pill">Express</span>
-                                <span class="gui-pill">Socket.io</span><span class="gui-pill">Jupyter</span>
-                                <span class="gui-pill">Colab</span><span class="gui-pill">VS Code</span>
-                                <span class="gui-pill">Cursor</span>
+                                <span class="gui-pill">Python</span><span class="gui-pill">C</span>
+                                <span class="gui-pill">C++</span><span class="gui-pill">Go</span>
                             </div>
                         </div>
                     </div>
@@ -1521,30 +1518,41 @@
                     <div class="gui-section-label">Projects</div>
                     <div class="gui-projects-grid">
                         <div class="gui-project-card">
-                            <div class="gui-project-name">Colait AI</div>
-                            <div class="gui-project-type">Real-time voice-based AI interview platform</div>
-                            <div class="gui-project-stack">Nova Sonic &middot; Strands &middot; Bedrock</div>
-                            <div class="gui-project-highlights">Multi-mode prompt/tool architecture; custom Nepali TTS</div>
+                            <div class="gui-project-name">Colait</div>
+                            <div class="gui-project-type">Clinical voice interview and scribe platform. Physician interviews over bidirectional audio or chat: Nova Sonic speaks, Haiku plans each turn. Scribe turns a visit into a diarized, romanized brief.</div>
+                            <div class="gui-project-stack">Nova Sonic &middot; Claude Haiku &middot; Bedrock &middot; DynamoDB &middot; S3 &middot; AgentCore</div>
+                            <div class="gui-project-highlights">Deployed as an ARM64 image to ECR and Bedrock AgentCore</div>
                         </div>
                         <div class="gui-project-card">
-                            <div class="gui-project-name">HelloSarkar (हेलोसरकार)</div>
-                            <div class="gui-project-type">Nepali voice AI for government grievance registration</div>
+                            <div class="gui-project-name">TelvoxAI</div>
+                            <div class="gui-project-type">LiveKit voice-agent platform. Multi-tool phone agent for leads, calendar, transfer, and custom HTTP tools.</div>
+                            <div class="gui-project-stack">LiveKit &middot; Azure &middot; ElevenLabs &middot; Google &middot; OpenAI &middot; Groq STT &middot; Silero VAD &middot; RNNoise</div>
+                            <div class="gui-project-highlights">Moving STT to Groq cut turn latency from ~8&ndash;9s to ~1&ndash;2s</div>
                         </div>
                         <div class="gui-project-card">
-                            <div class="gui-project-name">Neplia</div>
-                            <div class="gui-project-type">Nepali small language model (SLM)</div>
-                            <div class="gui-project-stack">Built on Qwen3-0.6B</div>
+                            <div class="gui-project-name">Nepali TTS</div>
+                            <div class="gui-project-type">Nepali speech synthesis: a Chatterbox multilingual fine-tune for Devanagari and Matcha-TTS Nepali inference.</div>
+                            <div class="gui-project-stack">Chatterbox &middot; Matcha-TTS &middot; PyTorch</div>
+                            <div class="gui-project-links">
+                                <a href="https://github.com/45Harry/chatterbox-nepali">chatterbox-nepali</a>
+                                <a href="https://github.com/45Harry/matcha-tts-nepali-test">matcha-tts-nepali-test</a>
+                            </div>
                         </div>
                         <div class="gui-project-card">
-                            <div class="gui-project-name">Real-time Voice Agent Pipeline</div>
-                            <div class="gui-project-type">Custom STT / LLM / TTS pipeline</div>
-                            <div class="gui-project-stack">LiveKit &middot; Azure &middot; Chirp3-HD &middot; ElevenLabs &middot; Groq</div>
-                            <div class="gui-project-highlights">English &middot; German &middot; Nepali</div>
+                            <div class="gui-project-name">BanknoteOCR</div>
+                            <div class="gui-project-type">Nepali denomination and signature pipeline: Roboflow-trained detector plus a PyTorch siamese signature model, served with FastAPI.</div>
+                            <div class="gui-project-stack">Roboflow &middot; PyTorch &middot; OpenCV &middot; ONNX Runtime &middot; CLIP &middot; Chroma</div>
+                            <div class="gui-project-highlights">~90% production accuracy</div>
+                            <div class="gui-project-links">
+                                <a href="https://github.com/45Harry/banknote-classifier">banknote-classifier</a>
+                                <a href="https://github.com/45Harry/banknote-finetunning">banknote-finetunning</a>
+                                <a href="https://github.com/45Harry/clip-model-finetunning-banknotes">clip-model-finetunning-banknotes</a>
+                            </div>
                         </div>
                         <div class="gui-project-card">
-                            <div class="gui-project-name">Nepali Banknote CV</div>
-                            <div class="gui-project-type">Denomination classification / retrieval</div>
-                            <div class="gui-project-stack">CLIP embeddings &middot; Few-shot learning</div>
+                            <div class="gui-project-name">AnswerServiceAI</div>
+                            <div class="gui-project-type">UK voice workflows: hotel order handling and garage booking agents, including live workflow automation and handoff.</div>
+                            <div class="gui-project-stack">Vapi &middot; n8n &middot; Twilio</div>
                         </div>
                     </div>
                 </section>
@@ -1557,49 +1565,44 @@
                             <h4>Experience</h4>
                             <div class="gui-entry">
                                 <div class="gui-entry-top">
-                                    <div class="gui-entry-title">Jr. AI Engineer</div>
+                                    <div class="gui-entry-title">AI Engineer</div>
+                                    <div class="gui-entry-year">Sep 2025 – Present</div>
                                 </div>
                                 <div class="gui-entry-sub">Mantra Ideas, Lalitpur</div>
                                 <ul class="gui-entry-notes">
-                                    <li>AI automation workflows</li>
+                                    <li>Colait: built the production voice interview runtime (FastAPI WebSocket, Nova Sonic for speech, Claude Haiku 4.5 on Bedrock via Strands for probing, transitions, and structured answers)</li>
+                                    <li>Kept sessions usable on bad networks: quiet-moment reconnects, unspoken-speech replay, heartbeat resume, and realtime transcript writes to S3</li>
+                                    <li>Shipped chat-only interviews and mid-session voice-to-chat on the same question state</li>
+                                    <li>Shipped Scribe: streaming Amazon Transcribe, speaker diarization, Haiku visit briefs, and romanized transcripts</li>
+                                    <li>Built the anonymized interview corpus behind analytics and PDF reports, with PII scrub</li>
+                                    <li>Built production voice agents for a UK client (hotel orders, garage bookings) with Vapi, n8n, and Twilio</li>
                                 </ul>
                             </div>
                             <div class="gui-entry">
                                 <div class="gui-entry-top">
                                     <div class="gui-entry-title">Data Science Intern</div>
+                                    <div class="gui-entry-year">Jun 2025 – Sep 2025</div>
                                 </div>
                                 <div class="gui-entry-sub">Mindrisers Technologies, Kathmandu</div>
                                 <ul class="gui-entry-notes">
-                                    <li>Generative AI with LLaMA + LangChain</li>
-                                    <li>Churn prediction &amp; sentiment models</li>
-                                    <li>Deployed AI applications with the team</li>
-                                </ul>
-                            </div>
-                            <div class="gui-entry">
-                                <div class="gui-entry-top">
-                                    <div class="gui-entry-title">Volunteer — Birat Expo 2079</div>
-                                    <div class="gui-entry-year">Dec 2022</div>
-                                </div>
-                                <div class="gui-entry-sub">Biratnagar, Nepal</div>
-                                <ul class="gui-entry-notes">
-                                    <li>System maintenance during the event</li>
-                                    <li>Event management support</li>
+                                    <li>Generative assistants with LLaMA and LangChain: a medical chatbot on the Gale Encyclopedia and a news research app (Groq Llama 3 + FAISS)</li>
+                                    <li>Classical and neural models for churn prediction and financial sentiment, deployed with the engineering team</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="gui-vita-col">
                             <h4>Education</h4>
                             <div class="gui-entry">
-                                <div class="gui-edu-degree">Data Science w/ Python Certification</div>
-                                <div class="gui-edu-meta">Mindrisers Institute of Technology &middot; 2024–2025</div>
+                                <div class="gui-edu-degree">Data Science with Python</div>
+                                <div class="gui-edu-meta">Mindrisers Institute of Technology, Kathmandu &middot; Sep 2024 – Jan 2025</div>
                             </div>
                             <div class="gui-entry">
                                 <div class="gui-edu-degree">Diploma in Computer Engineering</div>
-                                <div class="gui-edu-meta">Adarsha Secondary School &middot; 2020–2024</div>
+                                <div class="gui-edu-meta">Adarsha Secondary School, Biratnagar &middot; 2020 – 2024</div>
                             </div>
                             <div class="gui-entry">
                                 <div class="gui-edu-degree">Diploma in Graphic Designing</div>
-                                <div class="gui-edu-meta">New BIIT Institute &middot; 2023</div>
+                                <div class="gui-edu-meta">New BIIT Institute, Biratnagar &middot; Jan 2023 – Apr 2023</div>
                             </div>
                         </div>
                     </div>
@@ -1635,7 +1638,7 @@
                         </div>
                     </div>
                     <div class="gui-footer">
-                        &copy; 2025 Hari Narayan Sah &middot; <a href="https://github.com/45Harry">45Harry</a> &middot;
+                        &copy; 2026 Hari Narayan Sah &middot; <a href="https://github.com/45Harry">45Harry</a> &middot;
                         <a href="./assets/Hari Narayan Sah Resume AI Engineer.pdf">resume.pdf</a>
                     </div>
                 </section>
