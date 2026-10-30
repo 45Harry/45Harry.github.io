@@ -1277,21 +1277,20 @@
                     <div class="line i3">{</div>
                     <div class="line i4">"name": "TelvoxAI",</div>
                     <div class="line i4">"type": "LiveKit voice-agent platform",</div>
-                    <div class="line i4">"stack": "LiveKit, Azure, ElevenLabs, Google, OpenAI, Groq STT, Silero VAD, RNNoise",</div>
-                    <div class="line i4">"highlights": "multi-tool phone agent (leads, calendar, transfer, custom HTTP tools); Groq STT cut turn latency from ~8-9s to ~1-2s",</div>
+                    <div class="line i4">"stack": "LiveKit, OpenAI, vLLM, Groq STT, ElevenLabs, Google TTS, Azure, Silero VAD, RNNoise, WebRTC NS",</div>
+                    <div class="line i4">"highlights": "phone agents for leads, booking, transfer, knowledge-base Q&amp;A, and custom HTTP tools, configured per agent from an admin panel; Groq STT cut turn latency from ~8-9s to ~1-2s; filler audio covers tool-call gaps; self-hosted LLMs via vLLM",</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
                     <div class="line i4">"name": "Nepali TTS",</div>
-                    <div class="line i4">"type": "Nepali speech synthesis fine-tunes",</div>
-                    <div class="line i4">"stack": "Chatterbox multilingual fine-tune (Devanagari), Matcha-TTS",</div>
-                    <div class="line i4">"repos": ["<a href="https://github.com/45Harry/chatterbox-nepali">chatterbox-nepali</a>", "<a href="https://github.com/45Harry/matcha-tts-nepali-test">matcha-tts-nepali-test</a>"],</div>
+                    <div class="line i4">"type": "TTS fine-tuning for Nepali speech",</div>
+                    <div class="line i4">"stack": "Chatterbox multilingual (Devanagari), Matcha-TTS single/multi-speaker, Qwen3-TTS, Fish Speech",</div>
+                    <div class="line i4">"highlights": "models published on Hugging Face; Dockerized Chatterbox inference service with latency benchmarks and load tests",</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
                     <div class="line i4">"name": "BanknoteOCR",</div>
                     <div class="line i4">"type": "Nepali denomination and signature pipeline",</div>
                     <div class="line i4">"stack": "Roboflow detector, PyTorch siamese signature model, FastAPI, OpenCV, ONNX Runtime, CLIP, Chroma",</div>
                     <div class="line i4">"highlights": "~90% production accuracy",</div>
-                    <div class="line i4">"repos": ["<a href="https://github.com/45Harry/banknote-classifier">banknote-classifier</a>", "<a href="https://github.com/45Harry/banknote-finetunning">banknote-finetunning</a>", "<a href="https://github.com/45Harry/clip-model-finetunning-banknotes">clip-model-finetunning-banknotes</a>"],</div>
                     <div class="line i3">},</div>
                     <div class="line i3">{</div>
                     <div class="line i4">"name": "AnswerServiceAI",</div>
@@ -1310,7 +1309,7 @@
                     <div class="line i4">"Azure Speech", "ElevenLabs", "Groq STT", "OpenAI", "Deepgram",</div>
                     <div class="line i3">],</div>
                     <div class="line i3">"nepali_speech": [</div>
-                    <div class="line i4">"Chatterbox multilingual fine-tune", "Matcha-TTS", "Devanagari romanization",</div>
+                    <div class="line i4">"Chatterbox multilingual fine-tune", "Matcha-TTS", "Qwen3-TTS", "Fish Speech", "Devanagari romanization",</div>
                     <div class="line i3">],</div>
                     <div class="line i3">"llm_agents": [</div>
                     <div class="line i4">"Bedrock", "LangChain", "LangGraph", "LangSmith", "LLaMA", "Groq", "FAISS", "tool calling", "MCP", "RAG",</div>
@@ -1492,6 +1491,7 @@
                             <h3>Nepali Speech</h3>
                             <div class="gui-skill-pills">
                                 <span class="gui-pill">Chatterbox fine-tune</span><span class="gui-pill">Matcha-TTS</span>
+                                <span class="gui-pill">Qwen3-TTS</span><span class="gui-pill">Fish Speech</span>
                                 <span class="gui-pill">Devanagari romanization</span>
                             </div>
                         </div>
@@ -1552,29 +1552,21 @@
                         </div>
                         <div class="gui-project-card">
                             <div class="gui-project-name">TelvoxAI</div>
-                            <div class="gui-project-type">LiveKit voice-agent platform. Multi-tool phone agent for leads, calendar, transfer, and custom HTTP tools.</div>
-                            <div class="gui-project-stack">LiveKit &middot; Azure &middot; ElevenLabs &middot; Google &middot; OpenAI &middot; Groq STT &middot; Silero VAD &middot; RNNoise</div>
-                            <div class="gui-project-highlights">Moving STT to Groq cut turn latency from ~8&ndash;9s to ~1&ndash;2s</div>
+                            <div class="gui-project-type">LiveKit voice-agent platform. Phone agents for leads, booking, transfer, knowledge-base Q&amp;A, and custom HTTP tools, configured per agent from an admin panel.</div>
+                            <div class="gui-project-stack">LiveKit &middot; OpenAI &middot; vLLM &middot; Groq STT &middot; ElevenLabs &middot; Google TTS &middot; Azure &middot; Silero VAD &middot; RNNoise &middot; WebRTC NS</div>
+                            <div class="gui-project-highlights">Groq STT cut turn latency from ~8&ndash;9s to ~1&ndash;2s &middot; filler audio covers tool-call gaps &middot; RAG knowledge base &middot; self-hosted LLMs via vLLM</div>
                         </div>
                         <div class="gui-project-card">
                             <div class="gui-project-name">Nepali TTS</div>
-                            <div class="gui-project-type">Nepali speech synthesis: a Chatterbox multilingual fine-tune for Devanagari and Matcha-TTS Nepali inference.</div>
-                            <div class="gui-project-stack">Chatterbox &middot; Matcha-TTS &middot; PyTorch</div>
-                            <div class="gui-project-links">
-                                <a href="https://github.com/45Harry/chatterbox-nepali">chatterbox-nepali</a>
-                                <a href="https://github.com/45Harry/matcha-tts-nepali-test">matcha-tts-nepali-test</a>
-                            </div>
+                            <div class="gui-project-type">TTS fine-tuning for Nepali speech: Chatterbox multilingual for Devanagari, Matcha-TTS single and multi-speaker, Qwen3-TTS, and Fish Speech.</div>
+                            <div class="gui-project-stack">Chatterbox &middot; Matcha-TTS &middot; Qwen3-TTS &middot; Fish Speech &middot; PyTorch &middot; Docker</div>
+                            <div class="gui-project-highlights">Models published on Hugging Face &middot; Dockerized Chatterbox inference service with latency benchmarks and load tests</div>
                         </div>
                         <div class="gui-project-card">
                             <div class="gui-project-name">BanknoteOCR</div>
                             <div class="gui-project-type">Nepali denomination and signature pipeline: Roboflow-trained detector plus a PyTorch siamese signature model, served with FastAPI.</div>
                             <div class="gui-project-stack">Roboflow &middot; PyTorch &middot; OpenCV &middot; ONNX Runtime &middot; CLIP &middot; Chroma</div>
                             <div class="gui-project-highlights">~90% production accuracy</div>
-                            <div class="gui-project-links">
-                                <a href="https://github.com/45Harry/banknote-classifier">banknote-classifier</a>
-                                <a href="https://github.com/45Harry/banknote-finetunning">banknote-finetunning</a>
-                                <a href="https://github.com/45Harry/clip-model-finetunning-banknotes">clip-model-finetunning-banknotes</a>
-                            </div>
                         </div>
                         <div class="gui-project-card">
                             <div class="gui-project-name">AnswerServiceAI</div>
